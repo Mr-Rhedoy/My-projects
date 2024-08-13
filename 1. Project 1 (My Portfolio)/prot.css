@@ -1,0 +1,153 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.header
+{
+    position:fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    padding: 20px 10px;
+    background-color: transparent;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    z-index: 100%;
+
+}
+.logo
+{
+    font-size: 25px;
+    color: #031540;
+    text-decoration: none;
+    font-weight:700px;
+
+}
+.navbar a
+{
+    font-size: 18px;
+    color:#fff;
+    text-decoration: none;
+    font-weight: 550;
+    margin-left: 35px;
+    transition:.3s;
+}
+.navbar a:hover, 
+.navbar a.active
+{
+    color:blue
+}
+.home
+{
+    height: 100vh;
+    background: linear-gradient(-90deg,#031546 65%,#fff 35%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10%;
+}
+.home-image
+{
+    width: 500px;
+    height: 500px;
+    background-color: #031540;
+    border-radius: 50%;
+    border: 25px solid white;
+    outline: 25px solid #031540;
+}
+.home-image img
+{   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 80px;
+    position: relative;
+    max-width: 275px;
+    bottom: 91px;
+}
+.home-content
+{
+    max-width: 600px;
+    color: white;
+    text-align: right;
+}
+.home-content h1
+{
+    font-size: 55px;
+    line-height: 1.2;
+}
+.home-content h3
+{
+    font-size: 40px;
+    color:transparent;
+    -webkit-text-stroke: .5px #fff;
+    background-image: linear-gradient(#00abf0,#00abf0);
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    background-position: -410px 0;
+    animation: animateText 6s linear infinite;
+
+}
+@keyframes animateText{
+    0%,
+    95%,
+    100%
+    {
+        background-position: -410px 0;
+    }
+    65%,85%{
+        background-position: 0 0;
+    }
+}
+.home-content p
+{
+    font-size: 16px;
+    margin-top: 20px;
+}
+.home-sci
+{
+    margin: 25px 0px 40px;
+}
+.home-sci a
+{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #00abf0;
+    text-decoration: none;
+    margin-left: 12px;
+}
+.home-sci a:hover
+{
+    background: #00abf0;
+    color: #fff;
+    border-color: #00abf0;
+    box-shadow: 0 0 10px #00abf0;
+}
+.cv
+{
+    padding: 12px 35px;
+    background: #00abf0;
+    border-radius: 40px;
+    font-size: 17px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600px;
+    letter-spacing: 1px;
+    box-shadow: 0 0 10px #00abf0;
+    transition: 0.5s;
+}
+.cv:hover
+{
+    box-shadow: none;
+}
