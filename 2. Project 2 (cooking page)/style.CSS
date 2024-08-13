@@ -1,0 +1,150 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing:border-box;
+    font-family: sans-serif;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    background: white;
+}
+header{
+    height: 60px;
+    width: 100%;
+    background: rgb(44, 40, 40);
+    color: white;
+    display: flex;
+    align-items: center;
+
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+nav ul li{
+    list-style: none;
+    display: inline;
+    margin-right: 20px;
+    font-weight: 550;
+}
+.logo
+{
+    font-size: 24px;
+}
+.hero
+{
+    width:100%;
+    height: auto;
+    background: url(heo-image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 140px 0;
+}
+.hero h1
+{
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+.hero p
+{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.Search-box
+{
+    max-width: 550px;
+    margin: 15px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Search-box input
+{
+    width: 70%;
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-radius: 5px 0px 0px 5px;
+    font-size: 1rem;
+}
+.Search-box button
+{
+    padding: 10px 20px;
+    outline: none;
+    border: none;
+    border-radius: 0px 5px 5px 0px;
+    font-size: 1rem;
+    background-color: rgb(168, 32, 32);
+    color: white;
+    cursor: pointer;
+}
+/*............Recipe Section........*/
+.recipes
+{
+    padding: 50px 0;
+}
+.recipes h1
+{
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 28px;
+
+}
+.recipe-section
+{
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    column-gap: 10px;
+}
+.recipe-card
+{
+    background: white;
+    margin: 30px 10px;
+    border-radius: 8px;
+    border: 1px solid gray;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.recipe-card img
+{
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-left-radius: 10px;
+}
+.recipe-card h2
+{
+    font-size: 22px;
+    padding: 20px;
+}
+.recipe-card p
+{
+    font-size: 18px;
+    padding: 20px;
+}
+.recipe-card a
+{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+   background-color: rgb(122, 20, 20);
+   color: white;
+   padding: 15px 0;
+    cursor: pointer;
+}
+footer
+{
+    background:rgb(122, 20, 20) ;
+    padding: 20px 0;
+    color: white;
+    text-align: center;
+}
