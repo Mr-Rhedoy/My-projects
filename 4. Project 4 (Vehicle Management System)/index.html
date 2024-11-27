@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicle Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Vehicle Management System <br> by Rhedoy</h1>
+        </header>
+
+        <!-- Vehicle Form -->
+        <form id="vehicleForm">
+            <div class="form-group">
+                <label for="vehicleName">Vehicle Name:</label>
+                <input type="text" id="vehicleName" name="vehicleName" placeholder="Enter vehicle name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="vehicleModel">Model:</label>
+                <input type="text" id="vehicleModel" name="vehicleModel" placeholder="Enter vehicle model" required>
+            </div>
+
+            <div class="form-group">
+                <label for="vehicleRegNo">Registration Number:</label>
+                <input type="text" id="vehicleRegNo" name="vehicleRegNo" placeholder="Enter registration number" required>
+            </div>
+
+            <div class="form-group">
+                <label for="vehicleOwner">Owner's Name:</label>
+                <input type="text" id="vehicleOwner" name="vehicleOwner" placeholder="Enter owner's name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="vehicleColor">Vehicle Color:</label>
+                <input type="text" id="vehicleColor" name="vehicleColor" placeholder="Enter vehicle color" required>
+            </div>
+
+            <button type="submit" class="submit-btn">Park Vehicle</button>
+        </form>
+
+        <!-- Parking Diagram -->
+        <h2>Parking Slots</h2>
+        <div id="parkingDiagram" class="parking-diagram">
+            <!-- Parking slots will be displayed here -->
+        </div>
+
+        <!-- Receipt Display -->
+        <div id="receipt" class="receipt hidden">
+            <h2>Receipt</h2>
+            <p id="receiptDetails"></p>
+            <button id="printReceipt">Print</button>
+            <button id="closeReceipt">Close</button>
+        </div>
+
+        <!-- Detailed Report -->
+        <h2>Vehicle Report</h2>
+        <div id="vehicleReport" class="vehicle-report hidden">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Vehicle Name</th>
+                        <th>Model</th>
+                        <th>Registration No</th>
+                        <th>Owner</th>
+                        <th>Entry Time</th>
+                        <th>Exit Time</th>
+                        <th>Charge (Taka)</th>
+                    </tr>
+                </thead>
+                <tbody id="reportTableBody"></tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
